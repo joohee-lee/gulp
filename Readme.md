@@ -112,13 +112,14 @@ npm install gulp-watch --save-dev
 ```
 
 #### browser-sync
+> browser-sync <https://browsersync.io/docs/gulp>
 > http://localhost:3000/html/index.html
+
 ```
 
 npm install browser-sync --save-dev
 
 ```
-
 
 #### Scss 파일 수정의 편의를 위한 sourcemap 추가
 > SCSS 파일명 및 위치 확인을 위해 sourcemap 설치 및 설정이 필요
@@ -129,9 +130,20 @@ npm install gulp-sourcemaps –save-dev
 
 ```
 
+#### npm install –save-dev run-sequence
+
+```
+
+ npm install –save-dev run-sequence
+
+```
+> gulp 
+
+
 #### 공통파일 include
 - header, footer, lnb 등을 공통
 - gulp 를 이용해서 공통파일을 포함
+- gulp build
 
 ```
 
@@ -139,6 +151,47 @@ npm install gulp-file-include –save-dev
 
 ```
 
+### step6. 소스 Build  과정 
+1. 파일의 통합 범위를 지정하고 원하는 파일을 통합하기 위해 useref 설치
+```
+npm install gulp-useref –save-dev
+```
+
+2. 빌드 전 파일 삭제 del 설치
+
+```
+
+npm install del –save-dev
+
+```
+
+3. useref 후 확장자 별로 압축을 위한 gulp-if 설치
+
+```
+
+npm install gulp-if –save-dev
+
+```
+
+4. css 압축을 위한 cssnano 설치
+```
+
+npm install gulp-cssnano –save-dev
+
+```
+
+5. js 압축을 위한 uglify 설치
+```
+npm install gulp-uglify –save-dev
+
+```
+
+### 이미지 스프라이트 
+```
+
+npm install --save-dev gulp.spritesmith
+
+```
 
 
 #### gulp Doc or helpGuide 

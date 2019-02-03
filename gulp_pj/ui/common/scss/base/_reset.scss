@@ -1,0 +1,71 @@
+
+// Variable
+$font-size-base: 16px;
+$font-size-sm: 14.22222px;
+$font-family-base : Helvetica,Apple-Gothic,Dotum,돋움,Gulim,굴림;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+article,blockquote,body,button,dd,div,dl,dt,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,input,legend,li,main,nav,ol,p,pre,section,select,span,td,textarea,th,ul{
+    margin:0;
+    padding:0
+}
+
+body{
+    word-wrap:break-word;
+    word-break:break-all;
+    -webkit-text-size-adjust:none;
+    background-color:#fff
+}
+li,ol,ul{
+    list-style:none
+}
+a{
+    text-decoration:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none
+}
+button,fieldset,img,input{
+    border:0 none
+}
+img,input,select,textarea{
+    vertical-align:middle
+}
+address,em{
+    font-style:normal
+}
+input{
+    border-radius:0
+}
+input[type=search],input[type=select],input[type=submit],input[type=text]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    box-sizing:border-box
+}
+input[type=search]::-webkit-search-cancel-button{
+    -webkit-appearance:none
+}
+hr{
+    clear:both;
+    height:0;
+    border:0;
+    overflow:hidden
+}
+
+body,button,h1,h2,h3,h4,h5,h6,input,select,textarea{
+    font-family: $font-family-base;
+}
+html{
+    font-size: $font-size-base;
+}
+@media only screen and (max-width:359px){
+    html{
+        font-size: $font-size-sm;
+    }
+}
+
+.a11y{
+//	@include a11y;
+}
